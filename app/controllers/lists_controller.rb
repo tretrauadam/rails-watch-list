@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class ListsController < ApplicationController
   before_action :set_list, only: %i[show destroy]
@@ -9,7 +9,6 @@ class ListsController < ApplicationController
 
   def show
     @bookmark = Bookmark.new
-    @review = Review.new(list: @list)
   end
 
   def new

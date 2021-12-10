@@ -1,6 +1,10 @@
-# frozen_string_literal: true
-
 class ReviewsController < ApplicationController
+
+  def empty
+    @review = review.empty?
+    
+  end
+
   def create
     @review = Review.new(review_params)
     @list = List.find(params[:list_id])

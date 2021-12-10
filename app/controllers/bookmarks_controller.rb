@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 
 class BookmarksController < ApplicationController
   before_action :set_bookmark, only: :destroy
